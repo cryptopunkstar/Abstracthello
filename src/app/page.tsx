@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { ConnectButton } from "thirdweb/react";
-import thirdwebIcon from "@public/thirdweb.svg";
+import abspenguIcon from "@public/abspengu.svg";
 import { client } from "./client";
 
 export default function Home() {
@@ -15,8 +15,8 @@ export default function Home() {
           <ConnectButton
             client={client}
             appMetadata={{
-              name: "Example App",
-              url: "https://example.com",
+              name: "AbstractHello App",
+              url: "https://www.abs.xyz/",
             }}
           />
         </div>
@@ -31,7 +31,7 @@ function Header() {
   return (
     <header className="flex flex-col items-center mb-20 md:mb-20">
       <Image
-        src={thirdwebIcon}
+        src={abspenguIcon}
         alt=""
         className="size-[150px] md:size-[150px]"
         style={{
@@ -40,18 +40,10 @@ function Header() {
       />
 
       <h1 className="text-2xl md:text-6xl font-semibold md:font-bold tracking-tighter mb-6 text-zinc-100">
-        thirdweb SDK
-        <span className="text-zinc-300 inline-block mx-1"> + </span>
-        <span className="inline-block -skew-x-6 text-blue-500"> Next.js </span>
+        AbstractHello !
       </h1>
 
-      <p className="text-zinc-300 text-base">
-        Read the{" "}
-        <code className="bg-zinc-800 text-zinc-300 px-2 rounded py-1 text-sm mx-1">
-          README.md
-        </code>{" "}
-        file to get started.
-      </p>
+
     </header>
   );
 }
@@ -60,21 +52,22 @@ function ThirdwebResources() {
   return (
     <div className="grid gap-4 lg:grid-cols-3 justify-center">
       <ArticleCard
-        title="thirdweb SDK Docs"
-        href="https://portal.thirdweb.com/typescript/v5"
-        description="thirdweb TypeScript SDK documentation"
+        title="Abstract website"
+        href="https://www.abs.xyz/"
+        description="Spotlight Apps Enjoy these highly curated apps.
+browser image"
       />
 
       <ArticleCard
-        title="Components and Hooks"
-        href="https://portal.thirdweb.com/typescript/v5/react"
-        description="Learn about the thirdweb React components and hooks in thirdweb SDK"
+        title="Stream and win XP"
+        href="https://www.abs.xyz/stream"
+        description="Apply to become a creator and start streaming to earn XP! XP is rewarded weekly on Tuesday's at 9AM PST."
       />
 
       <ArticleCard
-        title="thirdweb Dashboard"
-        href="https://thirdweb.com/dashboard"
-        description="Deploy, configure, and manage your smart contracts from the dashboard."
+        title="Verify your badge !"
+        href="https://www.abs.xyz/rewards"
+        description="Claim your abdge and win rewards !"
       />
     </div>
   );
