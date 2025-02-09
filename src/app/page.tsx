@@ -1,5 +1,6 @@
 "use client";
 
+
 import Image from "next/image";
 import { ConnectButton } from "thirdweb/react";
 import abspenguIcon from "@public/abspengu.svg";
